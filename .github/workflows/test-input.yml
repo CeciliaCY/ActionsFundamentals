@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        if [[1]]; then 
+        if [[ "abc" == "abc"]]; then 
           echo "abc"; 
         fi
       
