@@ -13,7 +13,8 @@ jobs:
     steps:
       - name: Test
         run: |
-          if [[ "${{BASE_URL}}" == "abc"]]; then 
-            echo "abc"; 
-          fi
+          echo ${{BASE_URL}}
+# if [[ "${{BASE_URL}}" == "abc"]]; then 
+#            echo "abc"; 
+#          fi
       
