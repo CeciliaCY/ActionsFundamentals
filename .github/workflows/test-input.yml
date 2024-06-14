@@ -15,7 +15,7 @@ jobs:
         run: |
           if [["${{github.event.inputs.BASE_URL}}" == "test"]]
             echo "${{github.event.inputs.BASE_URL}}"
-          fi
+          fi;
 # if [[ "${{BASE_URL}}" == "abc"]]; then 
 #            echo "abc"; 
 #          fi
