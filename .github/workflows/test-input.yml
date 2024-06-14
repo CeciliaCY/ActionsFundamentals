@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        if [[ "abc" == "abc"]]; then 
+        if [[ "${{BASE_URL}}" == "abc"]]; then 
           echo "abc"; 
         fi
       
