@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Test
         run: |
-          echo "${{BASE_URL}}""
+          echo "${{github.event.inputs.BASE_URL}}""
 # if [[ "${{BASE_URL}}" == "abc"]]; then 
 #            echo "abc"; 
 #          fi
