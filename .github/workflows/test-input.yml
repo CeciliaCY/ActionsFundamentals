@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Test
         run: |
-          if [[ "test" == "test" ]]; then ls -la; fi; if [[ "testa" == "test" ]]; then 
+          if [[ "${{github.event.inputs.BASE_URL}}" == "test" ]]; then 
             echo "abc: ${{github.event.inputs.BASE_URL}}"
           else
             echo "else: ${{github.event.inputs.BASE_URL}}" 
@@ -21,4 +21,4 @@ jobs:
 # if [[ "${{BASE_URL}}" == "abc"]]; then 
 #            echo "abc"; 
 #          fi
-      
+#   if [[ "test" == "test" ]]; then ls -la; fi; if [[ "testa" == "test" ]]; then 
