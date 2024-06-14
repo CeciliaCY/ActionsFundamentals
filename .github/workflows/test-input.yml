@@ -14,7 +14,7 @@ jobs:
       - name: Test
         run: |
           if [[ "${{github.event.inputs.BASE_URL}}" == "test" ]]; then 
-            echo "abc: ${{github.event.inputs.BASE_URL}}"
+            echo "abc"
           else
             echo "else: ${{github.event.inputs.BASE_URL}}" 
           fi
