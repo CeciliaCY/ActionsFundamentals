@@ -1,0 +1,16 @@
+name: GitHub Actions Input Test
+
+on:
+  workflow_dispatch:
+    inputs:
+        BASE_URL:
+          description: 'base url'
+          required: true
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+        if [["abc"=="abc"]]; then echo "abc"; fi
+      
