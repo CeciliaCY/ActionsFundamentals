@@ -11,8 +11,9 @@ jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-        if [[ "${{BASE_URL}}" == "abc"]]; then 
-          echo "abc"; 
-        fi
+      - name: Test
+        run: |
+          if [[ "${{BASE_URL}}" == "abc"]]; then 
+            echo "abc"; 
+          fi
       
