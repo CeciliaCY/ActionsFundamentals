@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Test
         run: |
-          if [[ "test" == "test" ]]; set +e; then ls -la; fi; set -e; if [[ "test" == "test" ]]; then 
+          if [[ "test" == "test" ]]; set +e; ls -la; fi; set -e; if [[ "test" == "test" ]]; then 
             echo "abc"
           else
             echo "else: test" == "test"; set +e; ls -la; fi; set -e;
