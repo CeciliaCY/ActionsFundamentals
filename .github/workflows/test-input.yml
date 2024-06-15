@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Test
         run: |
-          if [$exit_code -eq 0]; then ls -la; exit $exit_code; fi; if [[ "test"=="test" ]]; then
+          if [[ "test" == "test" ]]; then ls -la; exit 0; fi; if [[ "test"=="test" ]]; then
             echo "abc"
           else
             echo "else:test"
