@@ -16,7 +16,7 @@ jobs:
           if [[ "test" == "test" ]]; then set +e; ls -la; set -e; fi; if [[ "test"=="test" ]]; then
             echo "abc"
           else
-            echo "else"
+            echo "else:test" == "test" ]]; then set +e; ls -la; set -e; fi; if [[ "test"
           fi
           
 # if [[ "${{github.event.inputs.BASE_URL}}" == "test" ]]; then 
